@@ -1,3 +1,4 @@
+#!/bin/python3
 import numpy as np
 
 def sigmoid(x):
@@ -32,8 +33,10 @@ def forward(network, x):
     z2 = sigmoid(a2)
     a3 = np.dot(z2, W3) + b3
     return a3
-
-network = init_network()
-x = np.array([1.0, 0.5])
-y = forward(network, x)
-print(y)
+def main():
+    network = init_network()
+    x = np.array([1.0, 0.5])
+    y = forward(network, x)
+    print(y)
+if __name__ == "__main__":
+    main()

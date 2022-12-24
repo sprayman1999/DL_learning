@@ -1,3 +1,4 @@
+#!/bin/python3
 import numpy as np
 def softmax(a):
     c = np.max(a)
